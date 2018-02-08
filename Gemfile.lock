@@ -63,8 +63,9 @@ DEPENDENCIES
   pry
   rake
   rspec
+  sinatra
   sinatra-activerecord
   sqlite3
 
 BUNDLED WITH
-   1.12.5
+   1.16.1
