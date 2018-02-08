@@ -18,4 +18,11 @@ namespace :db do
     connection_details = YAML::load(File.open('config/database.yml'))
     File.delete(connection_details.fetch('database')) if File.exist?(connection_details.fetch('database'))
   end
+
+end
+
+desc('Loads up a console!')
+task :console do
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
+  Pry.start
 end
