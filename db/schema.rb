@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 9) do
 
   create_table "actors", force: :cascade do |t|
-    t.string  "call_letters"
-    t.integer "channel"
+    t.string "first_name"
+    t.string "last_name"
   end
 
   create_table "characters", force: :cascade do |t|
@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 9) do
     t.string  "name"
     t.integer "network_id"
     t.string  "genre"
+    t.string  "season"
     t.string  "day"
-    t.string  "sesason"
   end
 
 end
